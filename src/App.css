@@ -17,14 +17,27 @@
 }
 
 h1 {
-  font-size: 4em;
-  margin-bottom: 0.2em;
+  font-size: 3.5em;
+  margin-bottom: 0.25em;
   font-weight: 300;
   letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 h1 .bold {
   font-weight: 700;
+}
+
+.subtitle-container {
+  margin-top: -0.5em; /* This moves the container up */
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  color: #b07d62;
+  font-weight: 700; 
 }
 
 .location-line {
@@ -37,16 +50,8 @@ h1 .bold {
   margin-right: 0.5em;
 }
 
-h2 {
-  font-size: 1.2em;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  color: #b07d62;
-  font-weight: 400;
-}
-
 nav {
-  margin-bottom: 10px; 
+  margin-bottom: 5px; 
   display: flex;
   justify-content: center;
 }
@@ -61,18 +66,26 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #5e4b3c;
+  font-weight: 700;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+  color: #b07d62; /* Change color on hover */
+}
+
+nav ul li a.active {
+  color: #b07d62; /* Different color for active link */
 }
 
 main {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 10px; 
+  margin-top: 5px;
 }
 
 footer {
-  margin-top: auto;
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -90,7 +103,7 @@ footer a:hover {
 .home-content {
   text-align: left;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .home-content h2:first-child {
@@ -113,4 +126,34 @@ footer a:hover {
   position: absolute;
   left: 0;
   color: #b07d62;
+}
+
+.home-content h2 {
+  font-weight: 400; /* Normal weight */
+  color: #b07d62;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.home-content h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  color: #5e4b3c;
+  font-weight: 550; 
+}
+
+.home-content a {
+  color: inherit; /* This will use the same color as the parent text */
+  text-decoration: none; /* Removes the underline */
+  font-weight: 700; /* Makes the text bold */
+}
+
+.home-content a:hover {
+  text-decoration: none; /* Ensures no underline on hover */
 }
