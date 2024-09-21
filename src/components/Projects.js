@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Projects() {
-  return <h2>in progress lol</h2>;
+  return <h2>my digital sandcastles</h2>;
 }
 
 export default Projects;

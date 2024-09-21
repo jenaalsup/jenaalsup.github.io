@@ -14,12 +14,12 @@ function Home() {
       
       <h3>formerly:</h3>
       <ul>
-        <li>building security tools with ai @ <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">apple</a></li>
-        <li>protecting government communications from ai @ <a href="https://www.paragonfellowship.org/" target="_blank" rel="noopener noreferrer">paragon policy fellowship</a></li>
+        <li>building security tools <span style={{fontStyle: 'italic'}}>with</span> ai @ <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">apple</a></li>
+        <li>protecting government communications <span style={{fontStyle: 'italic'}}>from</span> ai @ <a href="https://www.paragonfellowship.org/" target="_blank" rel="noopener noreferrer">paragon policy fellowship</a></li>
         <li>secretary things (fighting admin) @ <a href="https://sites.google.com/site/arccaltech" target="_blank" rel="noopener noreferrer">caltech arc</a></li>
-        <li>investigating corporate climate misinformation @ <a href="https://www.rmichaelalvarez.com/" target="_blank" rel="noopener noreferrer">alvarez lab</a></li>
-        <li>researching wildfire evacuations @ <a href="https://fse.fsi.stanford.edu/" target="_blank" rel="noopener noreferrer">stanford fse</a></li>
-        <li>scraping sustainable fashion sites @ <a href="https://recurate.com/" target="_blank" rel="noopener noreferrer">recurate</a></li>
+        <li>exposing corporate greenwashing @ <a href="https://www.rmichaelalvarez.com/" target="_blank" rel="noopener noreferrer">alvarez lab</a></li>
+        <li>mapping wildfire evacuation demographics @ <a href="https://fse.fsi.stanford.edu/" target="_blank" rel="noopener noreferrer">stanford fse</a></li>
+        <li>gutting ecommerce sites @ <a href="https://recurate.com/" target="_blank" rel="noopener noreferrer">recurate</a></li>
       </ul>
     </div>
   );
