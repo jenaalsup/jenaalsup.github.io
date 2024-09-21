@@ -4,7 +4,13 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 40px); 
+}
+
+.content-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
@@ -29,7 +35,7 @@ h1 .bold {
 }
 
 .subtitle-container {
-  margin-top: -0.5em; /* This moves the container up */
+  margin-top: -0.5em;
 }
 
 h2 {
@@ -67,15 +73,12 @@ nav ul li a {
   text-decoration: none;
   color: #5e4b3c;
   font-weight: 700;
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  transition: color 0.3s ease; 
 }
 
-nav ul li a:hover {
-  color: #b07d62; /* Change color on hover */
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-  color: #b07d62; /* Different color for active link */
+  color: #b07d62; 
 }
 
 main {
@@ -85,6 +88,7 @@ main {
 }
 
 footer {
+  flex-shrink: 0;
   padding-top: 10px;
   display: flex;
   justify-content: center;
@@ -107,7 +111,7 @@ footer a:hover {
 }
 
 .home-content h2:first-child {
-  margin-top: 0; /* This removes the top margin from the first h2 in the home content */
+  margin-top: 0;
 }
 
 .home-content ul {
@@ -128,8 +132,17 @@ footer a:hover {
   color: #b07d62;
 }
 
+.home-content h2,
+.home-content h3 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  color: #5e4b3c;
+  font-weight: 550;
+}
+
 .home-content h2 {
-  font-weight: 400; /* Normal weight */
+  font-weight: 400;
   color: #b07d62;
   font-size: 1.2em;
   margin-top: 1em;
@@ -140,20 +153,12 @@ footer a:hover {
   margin-top: 0;
 }
 
-h3 {
-  font-size: 1.1em;
-  margin-top: 0;
-  margin-bottom: 0.4em;
-  color: #5e4b3c;
-  font-weight: 550; 
-}
-
 .home-content a {
-  color: inherit; /* This will use the same color as the parent text */
-  text-decoration: none; /* Removes the underline */
-  font-weight: 700; /* Makes the text bold */
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .home-content a:hover {
-  text-decoration: none; /* Ensures no underline on hover */
+  text-decoration: none; 
 }
