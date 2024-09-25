@@ -1,0 +1,45 @@
+/* src/components/Projects.css */
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects-heading {
+  font-size: 1.1em; /* Match the heading size from your other pages */
+  margin-top: 0; /* Adjust margin to match your style */
+  margin-bottom: 20px;
+  color: #b07d62; /* Match your existing color scheme */
+  font-weight: 700; /* Match your existing font weight */
+  text-align: center; /* Center align if needed */
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.2em; /* Adjust as needed */
+  margin: 0;
+  color: #5e4b3c; /* Match your existing color scheme */
+}
+
+.project-description {
+  margin: 5px 0;
+  color: #555; /* Subtle text color */
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-link {
+  text-decoration: none; /* No underline */
+  color: #5e4b3c; /* Match the nav link color */
+  font-weight: 700; /* Match the nav link font weight */
+}
+
+.project-link:hover {
+  color: #b07d62; /* Change color on hover */
+}
