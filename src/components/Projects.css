@@ -6,35 +6,35 @@
 }
 
 .projects-heading {
-  font-size: 1.1em; /* Match the heading size from your other pages */
-  margin-top: 0; /* Adjust margin to match your style */
+  font-size: 1.1em; 
+  margin-top: 0; 
   margin-bottom: 20px;
-  color: #b07d62; /* Match your existing color scheme */
-  font-weight: 700; /* Match your existing font weight */
-  text-align: center; /* Center align if needed */
+  color: #b07d62; 
+  font-weight: 700; 
+  text-align: center; 
 }
 
 .project {
   margin-top: 15px;
-  margin-bottom: 15px; /* Increase space between projects */
+  margin-bottom: 15px; 
 }
 
 .project h3 {
-  font-size: 1.2em; /* Adjust as needed */
-  margin: 0 0 5px; /* Space below the title */
-  color: #5e4b3c; /* Match your existing color scheme */
-  font-weight: 500; /* Lighter weight */
+  font-size: 1.2em; 
+  margin: 0 0 5px; 
+  color: #5e4b3c; 
+  font-weight: 500; 
 }
 
 .project-subtitle {
-  font-size: 0.9em; /* Adjust size as needed */
-  color: #5e4b3c; /* Match your existing color scheme */
-  margin: 5px 0 5px; /* Space above and below */
+  font-size: 0.9em;
+  color: #5e4b3c;
+  margin: 5px 0 5px; 
 }
 
 .project-description {
-  margin: 5px 0 5px; /* Space above the description */
-  color: #555; /* Subtle text color */
+  margin: 5px 0 5px;
+  color: #555;
 }
 
 .project-links {
@@ -43,11 +43,11 @@
 }
 
 .project-link {
-  text-decoration: none; /* No underline */
-  color: #5e4b3c; /* Match the nav link color */
-  font-weight: 700; /* Match the nav link font weight */
+  text-decoration: none; 
+  color: #5e4b3c; 
+  font-weight: 700; 
 }
 
 .project-link:hover {
-  color: #b07d62; /* Change color on hover */
+  color: #b07d62; 
 }
