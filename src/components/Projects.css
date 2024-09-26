@@ -15,17 +15,25 @@
 }
 
 .project {
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px; /* Increase space between projects */
 }
 
 .project h3 {
   font-size: 1.2em; /* Adjust as needed */
-  margin: 0;
+  margin: 0 0 5px; /* Space below the title */
   color: #5e4b3c; /* Match your existing color scheme */
+  font-weight: 500; /* Lighter weight */
+}
+
+.project-subtitle {
+  font-size: 0.9em; /* Adjust size as needed */
+  color: #5e4b3c; /* Match your existing color scheme */
+  margin: 5px 0 5px; /* Space above and below */
 }
 
 .project-description {
-  margin: 5px 0;
+  margin: 5px 0 5px; /* Space above the description */
   color: #555; /* Subtle text color */
 }
 
