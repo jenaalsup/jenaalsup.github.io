@@ -20,7 +20,9 @@ function Projects() {
         <h3>Eco-mmerce</h3>
         <p className="project-subtitle"><em>Marketplace for Sustainable Products</em></p>
         <p className="project-description">
-          Created a platform for users to discover and purchase vetted eco-friendly products. Built with Next.js, MongoDB, and Google Authentication.
+          Created a platform for users to discover and purchase vetted eco-friendly products.
+          Submitted to Equitable Elevation Hacks 2023. 
+          Built with Next.js, MongoDB, and Google Authentication.
         </p>
         <div className="project-links">
           <a href="https://eco-mmerce-seven.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">project</a>
@@ -32,7 +34,9 @@ function Projects() {
         <h3>Compost Share</h3>
         <p className="project-subtitle"><em>Find and Share Composting Spots</em></p>
         <p className="project-description">
-          Interactive web app which allows users to share, post, and look for local composting stations. Built with React, MongoDB, and the Google Maps API.
+          Interactive web app which allows users to share, post, and look for local composting stations.
+          Built with React, MongoDB, and the Google Maps API.
+          Won first place at Cal Earth Hacks 2020.
         </p>
         <div className="project-links">
           <a href="https://compost-share.netlify.app/" className="project-link" target="_blank" rel="noopener noreferrer">project</a>
