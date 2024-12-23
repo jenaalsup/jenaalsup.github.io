@@ -8,7 +8,7 @@ function Header() {
         <div className="subtitle-container">
           <h2>junior @ caltech studying cs + political science</h2>
           <div className="location-line">
-            <span role="img" aria-label="pin">📍</span>sf bay area | pasadena, ca | cambridge, uk
+            <span role="img" aria-label="pin">📍</span>sf bay area | pasadena, ca | new york city
           </div>
         </div>
       </div>
