@@ -5,7 +5,7 @@ function Home() {
     <div className="home-content">
       <h3>hi, i'm jena. currently:</h3>
       <ul>
-        <li>taking a break from my undergraduate studies at caltech to work on healthcare</li>
+        <li>taking a break from my undergraduate studies to work on healthcare</li>
         <li>thinking about how to solve poverty, climate, and cities</li>
         <li>learning about ai, full-stack development, and plant-based solutions</li>
         <li>reading <a href="https://www.goodreads.com/book/show/108428.Are_Prisons_Obsolete_" target="_blank" rel="noopener noreferrer">angela davis</a>, <a href="http://www.paulgraham.com/articles.html" target="_blank" rel="noopener noreferrer">paul graham</a>, and <a href="https://www.goodreads.com/book/show/122765395-elon-musk" target="_blank" rel="noopener noreferrer">walter isaacson</a></li>
