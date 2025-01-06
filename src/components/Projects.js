@@ -5,6 +5,17 @@ function Projects() {
   return (
     <div className="projects-container">
       <div className="project">
+        <h3>Nab</h3>
+        <p className="project-subtitle"><em>E-thrifting with automatic dynamic pricing</em></p>
+        <p className="project-description">
+          Peer-to-peer marketplace platform designed specifically for university students to buy and sell items within their campus community. Features an exponential decay pricing algorithm that automatically adjusts listings based on move-out deadlines and real-time market conditions. Built with Next.js, Firebase, and Vercel.</p>
+        <div className="project-links">
+          <a href="https://nab-ashy.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">project</a>
+          <a href="https://github.com/jenaalsup/nab" className="project-link" target="_blank" rel="noopener noreferrer">code</a>
+        </div>
+      </div>
+      <hr />
+      <div className="project">
         <h3>Palette Party</h3>
         <p className="project-subtitle"><em>AI-Powered Color Creation</em></p>
         <p className="project-description">
