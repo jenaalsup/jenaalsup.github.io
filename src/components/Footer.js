@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faGoodreads, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faGoodreads, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPencil, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
@@ -18,8 +18,8 @@ function Footer() {
       <a href="https://www.goodreads.com/jenaalsup" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGoodreads} />
       </a>
-      <a href="https://medium.com/@jena.alsup" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faMedium} />
+      <a href="https://substack.com/@jena550394" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faPencil} />
       </a>
       <a href="https://beliapp.co/app/jenaalsup" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faUtensils} />
