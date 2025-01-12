@@ -18,7 +18,7 @@ function Footer() {
       <a href="https://www.goodreads.com/jenaalsup" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGoodreads} />
       </a>
-      <a href="https://substack.com/@jena550394" target="_blank" rel="noopener noreferrer">
+      <a href="https://substack.com/@jenaalsup" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faPencil} />
       </a>
       <a href="https://beliapp.co/app/jenaalsup" target="_blank" rel="noopener noreferrer">
