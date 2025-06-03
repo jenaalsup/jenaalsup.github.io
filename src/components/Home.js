@@ -8,7 +8,7 @@ function Home() {
         <li>building ai search @ <a href="https://exa.ai/" target="_blank" rel="noopener noreferrer">exa</a></li>
         <li>understanding early human embryos @ <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">zernicka-goetz lab</a></li>
         <li>thinking about how to solve poverty, climate, and cities</li>
-        <li>learning about ai, full-stack development, and plant-based solutions</li>
+        <li>learning about ai, artificial wombs, and plant-based solutions</li>
         <li>reading <a href="https://www.goodreads.com/book/show/108428.Are_Prisons_Obsolete_" target="_blank" rel="noopener noreferrer">angela davis</a>, <a href="http://www.paulgraham.com/articles.html" target="_blank" rel="noopener noreferrer">paul graham</a>, and <a href="https://www.goodreads.com/book/show/122765395-elon-musk" target="_blank" rel="noopener noreferrer">walter isaacson</a></li>
         <li>blogging and guiding tours @ <a href="https://studentblog.caltech.edu/author/jenaalsup/" target="_blank" rel="noopener noreferrer">caltech admissions</a></li>
         <li>moving @ <a href="https://www.instagram.com/caltechdance/" target="_blank" rel="noopener noreferrer">caltech dance</a></li>

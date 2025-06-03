@@ -5,6 +5,17 @@ function Projects() {
   return (
     <div className="projects-container">
       <div className="project">
+        <h3>Caltech Summer Roomate Finder</h3>
+        <p className="project-subtitle"><em>Meet other Techers in your city</em></p>
+        <p className="project-description">
+          Webapp to find summer roommates and friends from Caltech. Built for HackTech 2025 with Next.js, Mapbox, Firebase, MongoDB, Vercel.</p>
+        <div className="project-links">
+          <a href="https://hacktech-omega.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">project</a>
+          <a href="https://github.com/jenaalsup/hacktech" className="project-link" target="_blank" rel="noopener noreferrer">code</a>
+        </div>
+      </div>
+      <hr />
+      <div className="project">
         <h3>Nab</h3>
         <p className="project-subtitle"><em>E-thrifting with automatic dynamic pricing</em></p>
         <p className="project-description">
