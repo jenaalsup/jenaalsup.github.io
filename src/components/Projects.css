@@ -15,8 +15,8 @@
 }
 
 .project {
-  margin-top: 15px;
-  margin-bottom: 15px; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 
 .project h3 {
@@ -28,18 +28,19 @@
 
 .project-subtitle {
   font-size: 0.9em;
-  color: #5e4b3c;
+  color: #b07d62;
   margin: 5px 0 5px; 
 }
 
 .project-description {
   margin: 5px 0 5px;
   color: #555;
+  line-height: 1.5;
 }
 
 .project-links {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .project-link {
