@@ -5,7 +5,6 @@ function Home() {
     <div className="home-content">
       <h3>hi, i'm jena. currently:</h3>
       <ul>
-        <li>building ai search @ <a href="https://exa.ai/" target="_blank" rel="noopener noreferrer">exa</a></li>
         <li>understanding early human embryos @ <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">zernicka-goetz lab</a></li>
         <li>thinking about how to solve poverty, climate, and cities</li>
         <li>learning about ai, artificial wombs, and plant-based solutions</li>
@@ -16,6 +15,7 @@ function Home() {
       
       <h3>formerly:</h3>
       <ul>
+        <li>building ai search @ <a href="https://exa.ai/" target="_blank" rel="noopener noreferrer">exa</a></li>
         <li>automating health plan administration @ <a href="https://yuzu.health/" target="_blank" rel="noopener noreferrer">yuzu health</a></li>
         <li>building security tools <span style={{fontStyle: 'italic'}}>with</span> ai @ <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">apple</a></li>
         <li>protecting government communications <span style={{fontStyle: 'italic'}}>from</span> ai @ <a href="https://www.paragonfellowship.org/" target="_blank" rel="noopener noreferrer">paragon policy fellowship</a></li>
