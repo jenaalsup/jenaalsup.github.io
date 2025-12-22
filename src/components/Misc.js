@@ -41,11 +41,11 @@ function Misc() {
 
   const getColor = (count) => {
     if (count === null) return 'transparent'; 
-    if (count === 0) return '#ebedf0'; 
-    if (count <= 50) return '#ffdddf';
-    if (count <= 100) return '#ffbdc2';  
-    if (count <= 150) return '#ff7d86';     
-    return '#ff4d3d';                     
+    if (count === 0) return 'var(--calendar-empty)'; 
+    if (count <= 50) return 'var(--calendar-l1)';
+    if (count <= 100) return 'var(--calendar-l2)';  
+    if (count <= 150) return 'var(--calendar-l3)';     
+    return 'var(--calendar-l4)';                     
   };
 
   const renderCalendar = () => {
@@ -71,7 +71,7 @@ function Misc() {
                 textAlign: 'right',
                 marginRight: '4px',
                 fontSize: '10px',
-                color: '#666',
+                color: 'var(--secondary-text)',
                 flexShrink: 0
               }}>
                 {day}
@@ -125,7 +125,7 @@ function Misc() {
           marginTop: '8px',
           marginLeft: '35px',
           fontSize: '12px',
-          color: '#666'
+          color: 'var(--secondary-text)'
         }}>
           <span>Less</span>
           {[0, 50, 100, 150, 200].map(level => (

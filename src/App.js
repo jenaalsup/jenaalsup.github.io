@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
@@ -9,10 +9,20 @@ import Projects from './components/Projects';
 import Misc from './components/Misc';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header theme={theme} toggleTheme={toggleTheme} />
         <div className="content-wrapper">
           <Navigation />
           <main>

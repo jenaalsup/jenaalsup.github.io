@@ -9,7 +9,7 @@
   font-size: 1.1em; 
   margin-top: 0; 
   margin-bottom: 20px;
-  color: #b07d62; 
+  color: var(--accent-color); 
   font-weight: 700; 
   text-align: center; 
 }
@@ -22,19 +22,19 @@
 .project h3 {
   font-size: 1.2em; 
   margin: 0 0 5px; 
-  color: #5e4b3c; 
+  color: var(--text-color); 
   font-weight: 500; 
 }
 
 .project-subtitle {
   font-size: 0.9em;
-  color: #b07d62;
+  color: var(--accent-color);
   margin: 5px 0 5px; 
 }
 
 .project-description {
   margin: 5px 0 5px;
-  color: #555;
+  color: var(--secondary-text);
   line-height: 1.5;
 }
 
@@ -45,10 +45,10 @@
 
 .project-link {
   text-decoration: none; 
-  color: #5e4b3c; 
+  color: var(--text-color); 
   font-weight: 700; 
 }
 
 .project-link:hover {
-  color: #b07d62; 
+  color: var(--accent-color); 
 }
