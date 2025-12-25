@@ -6,7 +6,7 @@ function Home() {
       <h3>hi, i'm jena. currently:</h3>
       <ul>
         <li>understanding early human embryos @ <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">zernicka-goetz lab</a></li>
-        <li>thinking about how to solve poverty, women's health, and reproductive autonomy</li>
+        <li>thinking about how to solve poverty, women's health, and environmental sustainability</li>
         <li>learning about ai, artificial wombs, and plant-based solutions</li>
         <li>moving @ <a href="https://www.instagram.com/caltechdance/" target="_blank" rel="noopener noreferrer">caltech dance</a></li>
       </ul>
