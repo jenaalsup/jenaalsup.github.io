@@ -155,6 +155,7 @@ function Misc() {
         <li><a href="https://www.matthewsiu.com/pathfinder" target="_blank" rel="noopener noreferrer">pathfinder</a></li>
         <li><a href="https://worksinprogress.co/issue/womb-for-improvement/" target="_blank" rel="noopener noreferrer">womb for improvement</a> by aria babu</li>
         <li><a href="https://jasmi.news/p/china-2025" target="_blank" rel="noopener noreferrer">america against china against america</a> by jasmine sun</li>
+        <li><a href="https://www.gleech.org/ai2025" target="_blank" rel="noopener noreferrer">ai 2025</a> by gavin leech</li>
       </ul>
       
       <br></br>
