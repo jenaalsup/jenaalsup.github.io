@@ -1,24 +1,34 @@
 :root {
-  --bg-color: #f5f1e8;
-  --text-color: #5e4b3c;
-  --accent-color: #b07d62;
-  --secondary-text: #5e4b3c;
-  --card-bg: #fff;
-  --calendar-empty: #ebedf0;
-  
-  --calendar-l1: #ffdddf;
-  --calendar-l2: #ffbdc2;
-  --calendar-l3: #ff7d86;
-  --calendar-l4: #ff4d3d;
+  --bg-color: #fff5f8;
+  --text-color: #5c3347;
+  --accent-color: #d4567a;
+  --secondary-text: #8f5f75;
+  --border-color: #e8a4bc;
+  --panel-bg: #ffffff;
+  --card-bg: #ffffff;
+  --tree-trunk: #8b5a4a;
+  --blossom-petal: #ffb3c9;
+  --blossom-center: #fff0f5;
+  --calendar-empty: #fce7ef;
+
+  --calendar-l1: #ffe0eb;
+  --calendar-l2: #ffb8d0;
+  --calendar-l3: #ff8fb3;
+  --calendar-l4: #e85d8a;
 }
 
 [data-theme='dark'] {
-  --bg-color: #202023;
-  --text-color: #c9c9c9;
-  --accent-color: #ffffff;
-  --secondary-text: #a1a1aa;
-  --card-bg: #2d2d30;
-  --calendar-empty: #2d2d30;
+  --bg-color: #1a1018;
+  --text-color: #f5d0e0;
+  --accent-color: #ff9ec0;
+  --secondary-text: #b8889e;
+  --border-color: #5c3a4f;
+  --panel-bg: #241820;
+  --card-bg: #241820;
+  --tree-trunk: #a67c6a;
+  --blossom-petal: #ff8fb3;
+  --blossom-center: #ffe4ef;
+  --calendar-empty: #2d1f28;
 
   --calendar-l1: #662e43;
   --calendar-l2: #994d6b;
@@ -28,18 +38,29 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco,
+    'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.7;
   transition: background-color 0.3s, color 0.3s;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: inherit;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  opacity: 0.75;
 }

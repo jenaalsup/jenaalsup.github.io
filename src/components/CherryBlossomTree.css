@@ -1,0 +1,130 @@
+.cherry-tree {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: 48px auto 0;
+  height: 260px;
+}
+
+.cherry-tree-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.tree-trunk,
+.tree-branch {
+  fill: none;
+  stroke: var(--tree-trunk);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tree-trunk {
+  stroke-width: 5;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  animation: grow-line 1.4s ease-out forwards;
+}
+
+.tree-branch {
+  stroke-width: 2.5;
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+  opacity: 0;
+  animation: grow-line 1s ease-out forwards;
+}
+
+.branch-1 { animation-delay: 0.8s; }
+.branch-2 { animation-delay: 1s; }
+.branch-3 { animation-delay: 1.2s; }
+.branch-4 { animation-delay: 1.4s; }
+.branch-5 { animation-delay: 1.6s; }
+.branch-6 { animation-delay: 1.8s; }
+
+.blossom-cluster {
+  opacity: 0;
+  transform-origin: center;
+  animation: bloom 0.8s ease-out forwards;
+}
+
+.blossom-cluster circle:first-child {
+  fill: var(--blossom-petal);
+}
+
+.blossom-center {
+  fill: var(--blossom-center);
+}
+
+.cluster-1 { animation-delay: 2s; }
+.cluster-2 { animation-delay: 2.15s; }
+.cluster-3 { animation-delay: 2.3s; }
+.cluster-4 { animation-delay: 2.45s; }
+.cluster-5 { animation-delay: 2.6s; }
+.cluster-6 { animation-delay: 2.75s; }
+.cluster-7 { animation-delay: 2.9s; }
+.cluster-8 { animation-delay: 3.05s; }
+.cluster-9 { animation-delay: 3.2s; }
+
+.falling-petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.falling-petal {
+  position: absolute;
+  top: -12px;
+  border-radius: 50% 0 50% 0;
+  background: var(--blossom-petal);
+  opacity: 0;
+  animation: fall-petal linear infinite;
+}
+
+@keyframes grow-line {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bloom {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fall-petal {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(0deg);
+  }
+  10% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(280px) rotate(360deg) translateX(20px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-trunk,
+  .tree-branch,
+  .blossom-cluster,
+  .falling-petal {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+    transform: none;
+  }
+}

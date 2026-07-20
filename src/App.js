@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -22,17 +21,26 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <div className="content-wrapper">
+        <div className="top-bar">
+          <span className="site-title">jena alsup</span>
+          <div className="top-bar-right">
           <Navigation />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/misc" element={<Misc />} />
-            </Routes>
-          </main>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+          >
+            {theme === 'light' ? '◐' : '◑'}
+          </button>
+          </div>
         </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/misc" element={<Misc />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

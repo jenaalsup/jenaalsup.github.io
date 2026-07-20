@@ -1,26 +1,29 @@
 import React from 'react';
+import CherryBlossomTree from './CherryBlossomTree';
 
 function Home() {
   return (
     <div className="home-content">
-      <h3>hi, i'm jena. currently:</h3>
-      <ul>
-        <li>understanding early human embryos @ <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">zernicka-goetz lab</a></li>
-        <li>thinking about how to solve poverty, women's health, and environmental sustainability</li>
-        <li>learning about ai, artificial wombs, and plant-based solutions</li>
-        <li>moving @ <a href="https://www.instagram.com/caltechdance/" target="_blank" rel="noopener noreferrer">caltech dance</a></li>
-      </ul>
-      
-      <h3>formerly:</h3>
-      <ul>
-        <li>building ai search @ <a href="https://exa.ai/" target="_blank" rel="noopener noreferrer">exa</a></li>
-        <li>automating health plan administration @ <a href="https://yuzu.health/" target="_blank" rel="noopener noreferrer">yuzu health</a></li>
-        <li>building security tools <span style={{fontStyle: 'italic'}}>with</span> ai @ <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">apple</a></li>
-        <li>protecting government communications <span style={{fontStyle: 'italic'}}>from</span> ai @ <a href="https://www.paragonfellowship.org/" target="_blank" rel="noopener noreferrer">paragon policy fellowship</a></li>
-        <li>exposing corporate greenwashing @ <a href="https://www.rmichaelalvarez.com/" target="_blank" rel="noopener noreferrer">alvarez lab</a></li>
-        <li>mapping wildfire evacuation demographics @ <a href="https://fse.fsi.stanford.edu/" target="_blank" rel="noopener noreferrer">stanford fse</a></li>
-        <li>gutting ecommerce sites @ <a href="https://trove.com/" target="_blank" rel="noopener noreferrer">recurate</a></li>
-      </ul>
+      <p className="home-lead">
+        Hi! I'm Jena, an engineer at{' '}
+        <a href="https://www.untillabs.com/" target="_blank" rel="noopener noreferrer">
+          Until Labs
+        </a>{' '}
+        working to build a pause button on biology.
+      </p>
+
+      <p>
+        Formerly, I worked on software at{' '}
+        <a href="https://exa.ai/" target="_blank" rel="noopener noreferrer">Exa</a>,{' '}
+        <a href="https://yuzu.health/" target="_blank" rel="noopener noreferrer">Yuzu Health</a>, and{' '}
+        <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">Apple</a>.
+        I completed my undergraduate studies in computer science at Caltech,
+        where I studied early human embryos in the{' '}
+        <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">Zernicka-Goetz Lab</a>.
+        I'm interested in control systems, machine learning, and full-stack development.
+      </p>
+
+      <CherryBlossomTree />
     </div>
   );
 }
