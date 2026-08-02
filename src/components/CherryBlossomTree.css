@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   max-width: 280px;
-  margin: 48px auto 0;
+  margin: 36px auto 0;
   height: 260px;
 }
 
@@ -13,7 +13,8 @@
 }
 
 .tree-trunk,
-.tree-branch {
+.tree-branch,
+.tree-twig {
   fill: none;
   stroke: var(--tree-trunk);
   stroke-linecap: round;
@@ -22,49 +23,55 @@
 
 .tree-trunk {
   stroke-width: 5;
-  stroke-dasharray: 90;
-  stroke-dashoffset: 90;
-  animation: grow-line 1.4s ease-out forwards;
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
+  animation: grow-line 2.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-.tree-branch {
+.tree-branch,
+.tree-twig {
   stroke-width: 2.5;
-  stroke-dasharray: 80;
-  stroke-dashoffset: 80;
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
   opacity: 0;
-  animation: grow-line 1s ease-out forwards;
+  animation: grow-line 1.35s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
-.branch-1 { animation-delay: 0.8s; }
-.branch-2 { animation-delay: 1s; }
-.branch-3 { animation-delay: 1.2s; }
-.branch-4 { animation-delay: 1.4s; }
-.branch-5 { animation-delay: 1.6s; }
-.branch-6 { animation-delay: 1.8s; }
+.tree-twig { stroke-width: 1.75; }
+
+.branch-1 { animation-delay: 1.25s; }
+.branch-2 { animation-delay: 1.5s; }
+.branch-3 { animation-delay: 1.8s; }
+.branch-4 { animation-delay: 2.1s; }
+.branch-5 { animation-delay: 2.35s; }
+.branch-6 { animation-delay: 2.6s; }
+.twig-1 { animation-delay: 2.25s; }
+.twig-2 { animation-delay: 2.8s; }
+.twig-3 { animation-delay: 2.45s; }
+.twig-4 { animation-delay: 3.1s; }
+.twig-5 { animation-delay: 3.25s; }
+.twig-6 { animation-delay: 3.45s; }
 
 .blossom-cluster {
   opacity: 0;
   transform-origin: center;
-  animation: bloom 0.8s ease-out forwards;
+  transform-box: fill-box;
+  animation: soft-appear 1.1s ease-out forwards;
 }
 
-.blossom-cluster circle:first-child {
+.blossom-petal {
   fill: var(--blossom-petal);
 }
 
-.blossom-center {
-  fill: var(--blossom-center);
+.petal-1 {
+  fill: #f59ab9;
+  opacity: 0.88;
 }
 
-.cluster-1 { animation-delay: 2s; }
-.cluster-2 { animation-delay: 2.15s; }
-.cluster-3 { animation-delay: 2.3s; }
-.cluster-4 { animation-delay: 2.45s; }
-.cluster-5 { animation-delay: 2.6s; }
-.cluster-6 { animation-delay: 2.75s; }
-.cluster-7 { animation-delay: 2.9s; }
-.cluster-8 { animation-delay: 3.05s; }
-.cluster-9 { animation-delay: 3.2s; }
+.petal-2 {
+  fill: #ffc2d4;
+  opacity: 0.78;
+}
 
 .falling-petals {
   position: absolute;
@@ -89,17 +96,14 @@
   }
 }
 
-@keyframes bloom {
-  0% {
+@keyframes soft-appear {
+  from {
     opacity: 0;
-    transform: scale(0);
+    transform: translateY(4px);
   }
-  70% {
-    transform: scale(1.15);
-  }
-  100% {
+  to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
@@ -113,13 +117,14 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(280px) rotate(360deg) translateX(20px);
+    transform: translateY(280px) rotate(300deg) translateX(18px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .tree-trunk,
   .tree-branch,
+  .tree-twig,
   .blossom-cluster,
   .falling-petal {
     animation: none;
