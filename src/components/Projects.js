@@ -3,6 +3,26 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Lumenoid Ellipsoid Fitting (Zernicka-Goetz Lab)',
+    subtitle: '3D morphology analysis of lumenoid',
+    description:
+      'Pipeline for segmenting lumen cavities from 3D .tif stacks and fitting ellipsoids. Extracts geometric features like aspect ratio, volume, and orientation. Built with Napari, nnInteractive, and Python.',
+    image: '/images/projects/lumenoid-ellipsoid-fitting.png',
+    links: [
+      { label: 'code', href: 'https://github.com/jenaalsup/lumenoid-ellipsoid-fitting' },
+    ],
+  },
+  {
+    title: 'Human Embryo Post-Implantation (Zernicka-Goetz Lab)',
+    subtitle: 'Morphological analysis of early human embryo development',
+    description:
+      'Quantified yolk sac geometry using Carnegie and experimental microscopy data, measured endoderm nuclear aspect ratios, and compared amnion vs. epiblast orientation relative to the radial axis. Built with Python and ImageJ.',
+    image: '/images/projects/cell-type-orientation.png',
+    links: [
+      { label: 'code', href: 'https://github.com/jenaalsup/human-embryo-post-implantation' },
+    ],
+  },
+  {
     title: 'Caltech Summer Roomate Finder',
     subtitle: 'Meet other Techers in your city',
     description:
@@ -94,11 +114,13 @@ function Projects() {
         <React.Fragment key={project.title}>
           {index > 0 && <hr className="project-divider" />}
           <div className="project">
-            <img
-              src={project.image}
-              alt=""
-              className="project-image"
-            />
+            {project.image && (
+              <img
+                src={project.image}
+                alt=""
+                className="project-image"
+              />
+            )}
             <div className="project-content">
               <h3>{project.title}</h3>
               <p className="project-subtitle">

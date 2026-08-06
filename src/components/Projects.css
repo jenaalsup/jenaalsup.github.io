@@ -17,8 +17,10 @@
   object-fit: cover;
   display: block;
   border: 1px solid var(--border-color);
-  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--border-color) 55%, transparent);
+  border-radius: 4px;
   background: var(--panel-bg);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--text-color) 6%, transparent);
 }
 
 .project-content {
