@@ -20,7 +20,7 @@ function Home() {
         I completed my undergraduate studies in computer science at Caltech,
         where I studied early human embryos in the{' '}
         <a href="https://zernickagoetzlab.com/" target="_blank" rel="noopener noreferrer">Zernicka-Goetz Lab</a>.
-        I'm interested in control systems, machine learning, and full-stack development.
+        I'm interested in control systems, machine learning, and women's health.
       </p>
 
       <CherryBlossomTree />
