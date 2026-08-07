@@ -23,6 +23,24 @@ const projects = [
     ],
   },
   {
+    title: 'Name a Woman',
+    subtitle: 'Name as many women and video games as you can in 3 minutes',
+    description: (
+      <>
+        Timed word game with two modes — name a woman or name a video game — scored against curated lists. Inspired by{' '}
+        <a href="https://isabisabel.com/name-a-woman" target="_blank" rel="noopener noreferrer">
+          isabisabel.com/name-a-woman
+        </a>
+        . Built with Next.js and Vercel.
+      </>
+    ),
+    image: '/images/projects/name-a-woman.png',
+    links: [
+      { label: 'project', href: 'https://name-a-woman.vercel.app/' },
+      { label: 'code', href: 'https://github.com/jenaalsup/name-a-woman' },
+    ],
+  },
+  {
     title: 'Caltech Summer Roomate Finder',
     subtitle: 'Meet other Techers in your city',
     description:
